@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+                                         "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory>
+		<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+		<property name="hibernate.connection.url">jdbc:mysql://localhost:3306/LiveAndLetLive</property>
+		<property name="hibernate.connection.username">root</property>
+		<property name="hibernate.connection.password">root</property>
+
+		<property name="hibernate.hbm2ddl.auto">update</property>
+		<property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+		<property name="hibernate.show_sql">true</property>
+
+		<mapping class="com.webtools.finalproject.pojo.Person" />
+		<mapping class="com.webtools.finalproject.pojo.Address" />
+		<mapping class="com.webtools.finalproject.pojo.Listing" />
+		<mapping class="com.webtools.finalproject.pojo.Traveller" />
+		<mapping class="com.webtools.finalproject.pojo.ListingPhotos" />
+		<mapping class="com.webtools.finalproject.pojo.Reservation" />
+		<mapping class="com.webtools.finalproject.pojo.PaymentDetails" />
+		<mapping class="com.webtools.finalproject.pojo.Contact" />
+	
+
+
+
+	</session-factory>
+</hibernate-configuration>
